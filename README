@@ -1,0 +1,7 @@
+android_touchrecorder
+=====================
+
+Make sure you have connected to your device via adb before executing this script.
+
+Usage:
+./record.sh
