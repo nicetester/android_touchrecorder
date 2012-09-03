@@ -3,7 +3,7 @@ read op
 if [ $op != "y" ]; then
     read op
 fi
-(adb shell getevent| grep -e "event.:" | awk '{print $2" " $3" " $4}' > log.txt) &
+(adb shell getevent | grep -e "event.:" | awk '{print $2" " $3" " $4}' > log.txt) &
 
 
 read op
@@ -13,7 +13,7 @@ done
 
 #kill getevent.
 pkill -f "getevent"
-echo "record finished."
+echo "recording finished."
 
 echo "press p to replay recording."
 read op
