@@ -1,8 +1,9 @@
 echo "press y to start recording, press t to stop recording."
 read op
 if [ $op == "y" ]; then
-    (adb shell getevent| grep -e "event.:" | awk '{print $2" " $3" " $4}' > log.txt) &
+    read op
 fi
+(adb shell getevent| grep -e "event.:" | awk '{print $2" " $3" " $4}' > log.txt) &
 
 
 read op
